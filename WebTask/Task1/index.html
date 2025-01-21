@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          height: 100vh;
+          background-color: #ffffff;
+        }
+        h1{
+            width: 340px;
+            /* border: 1px solid black; */
+            margin: 130px auto 20px auto;
+            color: #3949AB;
+            text-align: center;
+        }
+        form{
+            width : 400px;
+            text-align: center;
+            /* border: 2px solid rgb(255, 255, 255); */
+            border-top: 2px solid #3949AB;
+            border-left: 2px solid #3949AB;
+            border-radius: 4px;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 5px 4px 7px rgba(0, 0, 0, 0.1);
+        }
+
+        label{
+            display: inline-block;
+            width: 100px;
+            color: #5C6BC0;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        input{
+            width: calc(100% - 130px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #C5CAE9;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input::-webkit-input-placeholder{
+            color: #C5CAE9;
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"]{
+            width: 50%;
+            margin: auto;
+            background-color: #3949AB;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover{
+           background-color: #1E88E5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" placeholder="enter your first name">
+
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" placeholder="enter your last name">
+
+        <label for="Email">Email :</label>
+        <input type="text" id="email" placeholder="enter your Email" required>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password"  placeholder="enter your password">
+
+         <input type="submit" value="Submit" >
+
+    </form>
+</body>
+</html>
